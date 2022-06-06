@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "web-ext run --source-dir ./src",
     "lint": "web-ext lint --source-dir ./src",
-    "build": "web-ext build --source-dir ./src"
+    "build": "web-ext build --source-dir ./src --artifacts-dir ./dist"
   },
   "dependencies": {
     "web-ext": "^6.8.0"
