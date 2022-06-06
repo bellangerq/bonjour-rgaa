@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bonjour RGAA</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+
+  <body>
+    <header>
+      <details>
+        <summary>
+          <strong>À propos ℹ️</strong>
+        </summary>
+        <p>
+          <strong
+            >Bonjour
+            <abbr title="Référentiel général d'amélioration de l'accessibilité"
+              >RGAA</abbr
+            ></strong
+          >
+          : un nouvel onglet pour un critère du RGAA à (re)découvrir.
+          L'extension est disponible sur <a href="#">Firefox</a> et
+          <a href="#">Google Chrome</a>. Le code source de l'extension est
+          disponible sur <a href="#">GitHub</a>. <br />Version actuelle :
+          <code class="js-version"></code>
+        </p>
+      </details>
+    </header>
+
+    <main>
+      <div role="alert" aria-live="polite">
+        <strong hidden class="js-category category"></strong>
+        <h1 class="js-title title">Chargement des critères...</h1>
+      </div>
+
+      <div hidden class="js-actions actions">
+        <a
+          class="js-link link"
+          href="https://accessibilite.numerique.gouv.fr/methode/criteres-et-tests/"
+          target="_blank"
+        >
+          Découvrir le critère
+          <span class="js-number"></span>
+        </a>
+        <button class="js-new new">Un autre !</button>
+      </div>
+    </main>
+
+    <script src="./index.js"></script>
+  </body>
+</html>

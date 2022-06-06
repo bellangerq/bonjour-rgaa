@@ -1,0 +1,90 @@
+body {
+  background-color: aliceblue;
+  color: black;
+  font-family: sans-serif;
+  font-size: 1.2rem;
+  line-height: 1.5;
+  display: flex;
+  flex-direction: column;
+  max-width: 60rem;
+  min-height: calc(100vh - 2rem);
+  margin: 0 auto;
+  padding: 1rem 1rem 4rem;
+}
+
+a {
+  color: navy;
+  text-decoration: navy solid underline 0.25rem;
+  transition: text-decoration-color 0.25s;
+}
+
+abbr {
+  text-decoration-style: dashed;
+  text-decoration-color: violet;
+  text-decoration-thickness: 0.1rem;
+}
+
+a:hover,
+a:focus {
+  outline: none;
+  text-decoration-color: violet;
+}
+
+details {
+  max-width: 40rem;
+  margin-bottom: 10rem;
+}
+
+details summary {
+  display: inline-block;
+  list-style: none;
+  margin-bottom: 0.5rem;
+}
+
+details summary:focus {
+  outline: 0.25rem solid violet;
+}
+
+details p {
+  border-left: 0.5rem solid navy;
+  margin: 0;
+  padding-left: 1rem;
+}
+
+.category {
+  background-color: violet;
+  border-radius: 0.25rem;
+  padding: 0.25rem 0.5rem;
+  display: inline-block;
+  margin-bottom: 1rem;
+}
+
+.title {
+  font-size: 2.4rem;
+  margin: 0 0 2rem;
+}
+
+.actions {
+  align-items: center;
+  display: flex;
+  gap: 1rem;
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+
+.new {
+  background: navy;
+  border: none;
+  border-radius: 1rem;
+  font: inherit;
+  color: white;
+  padding: 1rem 2rem;
+  cursor: pointer;
+  transition: box-shadow 0.25s;
+}
+
+.new:focus,
+.new:hover {
+  box-shadow: 0 0 0 0.25rem violet;
+  outline: none;
+}
