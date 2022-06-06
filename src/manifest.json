@@ -2,9 +2,10 @@
   "manifest_version": 2,
   "name": "Bonjour RGAA",
   "version": "1.0",
-  "description": "",
+  "description": "Un nouvel onglet pour un critère du RGAA à (re)découvrir.",
   "icons": {
-    "48": "icons/icon-48.png"
+    "48": "icons/48x48.png",
+    "128": "icons/128x128.png"
   },
   "chrome_url_overrides": {
     "newtab": "index.html"
