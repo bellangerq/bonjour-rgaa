@@ -36,7 +36,7 @@ function cleanTitle(title) {
  * Set version based on `manifest.json file`
  */
 function setVersion() {
-  versionEl.innerHTML = browser.runtime.getManifest().version
+  versionEl.textContent = browser.runtime.getManifest().version
 }
 
 /**
@@ -89,13 +89,13 @@ function getRandomCriteria() {
  * @param {object} criterion
  */
 function updateContent(criterion) {
-  categoryEl.innerHTML = `${topicEmoji[criterion.topicNumber - 1]} ${
+  categoryEl.textContent = `${topicEmoji[criterion.topicNumber - 1]} ${
     criterion.topic
   }`
-  titleEl.innerHTML = `${criterion.topicNumber}.${
+  titleEl.textContent = `${criterion.topicNumber}.${
     criterion.criterionNumber
   } – ${cleanTitle(criterion.title)}`
-  numberEl.innerHTML = `${criterion.topicNumber}.${criterion.criterionNumber}`
+  numberEl.textContent = `${criterion.topicNumber}.${criterion.criterionNumber}`
   linkEl.setAttribute('href', getCriterionUrl(criterion))
 }
 
@@ -115,7 +115,8 @@ async function run() {
     actionsEl.removeAttribute('hidden')
     updateContent(currentCriterion)
   } catch (error) {
-    titleEl.innerHTML = 'Erreur : impossible de récupérer les critères du RGAA.'
+    titleEl.textContent =
+      'Erreur : impossible de récupérer les critères du RGAA.'
 
     console.error(error)
   }

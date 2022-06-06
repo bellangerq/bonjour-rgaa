@@ -4,7 +4,9 @@
   "author": "Quentin Bellanger <hello@quentin-bellanger.com>",
   "license": "MIT",
   "scripts": {
-    "dev": "web-ext run --source-dir ./src/ --start-url about:newtab"
+    "dev": "web-ext run --source-dir ./src",
+    "lint": "web-ext lint --source-dir ./src",
+    "build": "web-ext build --source-dir ./src"
   },
   "dependencies": {
     "web-ext": "^6.8.0"
