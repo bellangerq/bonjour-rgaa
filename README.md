@@ -1,6 +1,6 @@
 # Bonjour RGAA
 
-Browser extension which replaces the new tab page to display a random RGAA criterion. Available on [Firefox](#) and [Google Chrome](#).
+Browser extension which replaces the new tab page to display a random RGAA criterion. Soon available on [Firefox](#).
 
 ## Development
 
