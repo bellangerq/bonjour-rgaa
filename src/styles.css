@@ -62,10 +62,14 @@ details summary:focus {
   outline: 0.25rem solid var(--accent);
 }
 
-details p {
+details p, details ul {
   border-left: 0.5rem solid var(--primary);
   margin: 0;
   padding-left: 1rem;
+}
+
+details ul {
+  padding-left: 2rem;
 }
 
 .category {

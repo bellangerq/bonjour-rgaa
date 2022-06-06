@@ -5,6 +5,7 @@ const numberEl = document.querySelector('.js-number')
 const actionsEl = document.querySelector('.js-actions')
 const linkEl = document.querySelector('.js-link')
 const versionEl = document.querySelector('.js-version')
+const rgaaEl = document.querySelector('.js-rgaa')
 
 // Category emojis
 const topicEmoji = [
@@ -54,10 +55,12 @@ function getCriterionUrl(criterion) {
  * @returns
  */
 async function fetchCriteria() {
-  const url =
-    'https://raw.githubusercontent.com/DISIC/RGAA/master/v4.1/JSON/criteres.json'
+  const rgaaVersion = 'v4.1'
+  const url = `https://raw.githubusercontent.com/DISIC/RGAA/master/${rgaaVersion}/JSON/criteres.json`
   const response = await fetch(url)
   const result = await response.json()
+
+  rgaaEl.textContent = rgaaVersion
 
   const formattedCriteria = []
 
