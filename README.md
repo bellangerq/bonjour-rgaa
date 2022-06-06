@@ -18,4 +18,3 @@ Browser extension which replaces the new tab page to display a random RGAA crite
 ## To do
 
 - Don't refetch all criteria on every new tab (localstorage?)
-- Dark mode
