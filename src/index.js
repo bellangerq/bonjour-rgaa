@@ -56,11 +56,17 @@ function getCriterionUrl(criterion) {
  */
 async function fetchCriteria() {
   const rgaaVersion = 'v4.1'
+  rgaaEl.textContent = rgaaVersion
+
+  const localStorage = await browser.storage.local.get()
+
+  if (localStorage.criteria && localStorage.criteria.length) {
+    return localStorage.criteria
+  }
+
   const url = `https://raw.githubusercontent.com/DISIC/RGAA/master/${rgaaVersion}/JSON/criteres.json`
   const response = await fetch(url)
   const result = await response.json()
-
-  rgaaEl.textContent = rgaaVersion
 
   const formattedCriteria = []
 
@@ -109,6 +115,8 @@ let currentCriterion = null
 async function run() {
   try {
     criteria = await fetchCriteria()
+
+    browser.storage.local.set({ criteria })
 
     // Fake loading
     // await new Promise(r => setTimeout(r, 2000));
