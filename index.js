@@ -94,7 +94,7 @@ function updateContent(criterion) {
   }`
   titleEl.innerHTML = `${criterion.topicNumber}.${
     criterion.criterionNumber
-  } - ${cleanTitle(criterion.title)}`
+  } – ${cleanTitle(criterion.title)}`
   numberEl.innerHTML = `${criterion.topicNumber}.${criterion.criterionNumber}`
   linkEl.setAttribute('href', getCriterionUrl(criterion))
 }

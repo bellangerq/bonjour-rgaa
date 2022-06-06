@@ -1,33 +1,48 @@
+:root {
+  --text: black;
+  --background: aliceblue;
+  --primary: navy;
+  --accent: violet;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --text: aliceblue;
+    --background: black;
+    --primary: lightskyblue;
+    --accent: mediumvioletred;
+  }
+}
+
 body {
-  background-color: aliceblue;
-  color: black;
+  background-color: var(--background);
+  color: var(--text);
   font-family: sans-serif;
   font-size: 1.2rem;
   line-height: 1.5;
   display: flex;
   flex-direction: column;
   max-width: 60rem;
-  min-height: calc(100vh - 2rem);
   margin: 0 auto;
   padding: 1rem 1rem 4rem;
 }
 
 a {
-  color: navy;
-  text-decoration: navy solid underline 0.25rem;
+  color: var(--primary);
+  text-decoration: var(--primary) solid underline 0.25rem;
   transition: text-decoration-color 0.25s;
 }
 
 abbr {
   text-decoration-style: dashed;
-  text-decoration-color: violet;
+  text-decoration-color: var(--accent);
   text-decoration-thickness: 0.1rem;
 }
 
 a:hover,
 a:focus {
   outline: none;
-  text-decoration-color: violet;
+  text-decoration-color: var(--accent);
 }
 
 details {
@@ -36,23 +51,25 @@ details {
 }
 
 details summary {
+  border-radius: 0.25rem;
   display: inline-block;
   list-style: none;
   margin-bottom: 0.5rem;
+  cursor: pointer;
 }
 
 details summary:focus {
-  outline: 0.25rem solid violet;
+  outline: 0.25rem solid var(--accent);
 }
 
 details p {
-  border-left: 0.5rem solid navy;
+  border-left: 0.5rem solid var(--primary);
   margin: 0;
   padding-left: 1rem;
 }
 
 .category {
-  background-color: violet;
+  background-color: var(--accent);
   border-radius: 0.25rem;
   padding: 0.25rem 0.5rem;
   display: inline-block;
@@ -73,11 +90,11 @@ details p {
 }
 
 .new {
-  background: navy;
+  background: var(--primary);
   border: none;
   border-radius: 1rem;
   font: inherit;
-  color: white;
+  color: var(--background);
   padding: 1rem 2rem;
   cursor: pointer;
   transition: box-shadow 0.25s;
@@ -85,6 +102,6 @@ details p {
 
 .new:focus,
 .new:hover {
-  box-shadow: 0 0 0 0.25rem violet;
+  box-shadow: 0 0 0 0.25rem var(--accent);
   outline: none;
 }
