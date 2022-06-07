@@ -2,6 +2,8 @@
 
 Browser extension which replaces the new tab page to display a random RGAA criterion. Soon available on [Firefox](https://addons.mozilla.org/en-US/firefox/addon/bonjour-rgaa/).
 
+![](/src/screenshots/light.png)
+
 ## Development
 
 Run local app:
