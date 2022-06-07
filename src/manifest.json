@@ -15,7 +15,7 @@
   },
   "browser_specific_settings": {
     "gecko": {
-      "id": "bonjour-rgaa@mozilla.org",
+      "id": "{812112ae-8015-499a-beec-4bd7916d6f7a}",
       "strict_min_version": "54.0"
     }
   }
