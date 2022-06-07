@@ -16,7 +16,7 @@
   "browser_specific_settings": {
     "gecko": {
       "id": "bonjour-rgaa@mozilla.org",
-      "strict_min_version": "42a1"
+      "strict_min_version": "54.0"
     }
   }
 }
