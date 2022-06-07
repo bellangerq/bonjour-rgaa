@@ -9,6 +9,7 @@
     "build": "web-ext build --source-dir ./src --artifacts-dir ./dist"
   },
   "dependencies": {
-    "web-ext": "^6.8.0"
+    "web-ext": "^6.8.0",
+    "webextension-polyfill": "^0.9.0"
   }
 }
